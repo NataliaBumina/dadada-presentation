@@ -3,205 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ДаДаДа ПРОДУКТЫ — клуб оптовых цен</title>
+  <title>ДаДаДа ПРОДУКТЫ — Инвестиционное предложение</title>
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #000;
       color: #000;
-      line-height: 1.5;
-      padding: 20px 15px;
+      line-height: 1.6;
+      padding: 15px;
       min-height: 100vh;
     }
     .container {
-      max-width: 480px;
+      max-width: 500px;
       margin: 0 auto;
-      background: linear-gradient(135deg, #FFA500, #FFD700);
+      background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
       border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
     }
     header {
       text-align: center;
-      padding: 30px 20px 20px;
+      padding: 25px 20px;
+      background: rgba(255,255,255,0.1);
     }
-    .logo {
-      font-size: 32px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      color: #000;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    .logo-img {
+      max-width: 280px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
     }
     .subtitle {
-      font-size: 17px;
-      margin-top: 8px;
-      opacity: 0.9;
-    }
-    .section {
-      padding: 25px 20px;
-      background: rgba(255,255,255,0.95);
-      margin: 15px;
-      border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    h2 {
-      font-size: 22px;
-      margin-bottom: 20px;
-      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+      font-weight: 600;
       color: #000;
     }
-    .card {
-      background: #fff;
-      padding: 18px;
-      border-radius: 12px;
+    .section {
+      padding: 20px;
+      background: rgba(255,255,255,0.95);
+      margin: 12px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    .section-title {
+      font-size: 19px;
+      font-weight: 800;
       margin-bottom: 15px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-    .card-title {
-      font-weight: 700;
-      font-size: 17px;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .card-value {
-      font-size: 24px;
-      font-weight: 900;
-      color: #FFA500;
-    }
-    .highlight {
-      font-size: 28px;
-      font-weight: 900;
-      color: #d4380d;
-    }
-    .graph {
-      margin-top: 20px;
-    }
-    .graph-title {
       text-align: center;
-      margin-bottom: 15px;
-      font-weight: 700;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .info-block {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      border-left: 4px solid #FFA500;
+    }
+    .info-label {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .info-value {
+      font-size: 22px;
+      font-weight: 900;
+      color: #000;
+      line-height: 1.3;
+    }
+    .info-value.highlight {
+      color: #d4380d;
+      font-size: 26px;
+    }
+    .info-detail {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 15px;
+      margin-top: 15px;
+      font-size: 14px;
     }
     th, td {
-      padding: 10px;
+      padding: 10px 8px;
       text-align: center;
       border-bottom: 1px solid #eee;
     }
     th {
       background: #333;
       color: #FFD700;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    td {
+      background: #fff;
+    }
+    .market-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .tag {
+      background: #FFD700;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
       font-weight: 600;
+      color: #000;
     }
     footer {
       text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-      opacity: 0.8;
+      padding: 25px 20px;
+      font-size: 13px;
+      color: #000;
+      font-weight: 600;
     }
-    .icon {
-      width: 24px;
-      height: 24px;
-      fill: #FFA500;
+    .big-number {
+      font-size: 32px;
+      font-weight: 900;
+      color: #d4380d;
+      margin: 10px 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="logo">ДаДаДа</div>
-      <div class="subtitle">ПРОДУКТЫ — клуб оптовых цен</div>
+      <img src="logo.png" alt="ДаДаДа ПРОДУКТЫ" class="logo-img">
+      <div class="subtitle">КЛУБ ОПТОВЫХ ЦЕН</div>
     </header>
 
     <div class="section">
-      <h2>Ключевые показатели проекта</h2>
-
-      <div class="card">
-        <div class="card-title">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h14v-8h3L12 2z"/></svg>
-          Общий объём выручки
-        </div>
-        <div class="card-value">64,6 млн ₽</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 7v10m-5-5h10"/></svg>
-          Первая выручка
-        </div>
-        <div class="card-value">6-й месяц<br><small>(июнь 2026)</small></div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM10 17l-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9z"/></svg>
-          Окупаемость
-        </div>
-        <div class="card-value">18 месяцев<br><small>Возврат 66,6 млн ₽</small></div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-          Доходность за 60 мес
-        </div>
-        <div class="card-value highlight">1202%</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-          Прибыль инвестора (30%)
-        </div>
-        <div class="card-value highlight">0,78 млрд ₽</div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          География
-        </div>
-        <div class="card-value">Екатеринбург<br><small>→ 10 городов-миллионников</small></div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h14v-8h3L12 2z"/></svg>
-          Рынок
-        </div>
-        <div class="card-value">E-grocery + розница</div>
+      <div class="section-title">💰 Общий объем инвестиций</div>
+      <div class="info-block">
+        <div class="info-value">64,6 млн ₽</div>
+        <div class="info-detail">Инвестиции вносятся в течение первых 6 месяцев</div>
       </div>
     </div>
 
-    <div class="section graph">
-      <div class="graph-title">График инвестиций (тыс. ₽)</div>
+    <div class="section">
+      <div class="section-title">📊 График инвестиций</div>
       <table>
         <thead>
           <tr>
             <th>Месяц</th>
-            <th>Сумма</th>
+            <th>Сумма (тыс. ₽)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>1/26</td><td>5 296</td></tr>
-          <tr><td>2/26</td><td>6 419</td></tr>
-          <tr><td>3/26</td><td>6 419</td></tr>
-          <tr><td>4/26</td><td>23 618</td></tr>
-          <tr><td>5/26</td><td>22 619</td></tr>
-          <tr><td>6/26</td><td>175</td></tr>
+          <tr><td>1/2026</td><td>5 296</td></tr>
+          <tr><td>2/2026</td><td>6 419</td></tr>
+          <tr><td>3/2026</td><td>6 419</td></tr>
+          <tr><td>4/2026</td><td>23 618</td></tr>
+          <tr><td>5/2026</td><td>22 619</td></tr>
+          <tr><td>6/2026</td><td>175</td></tr>
         </tbody>
       </table>
     </div>
 
+    <div class="section">
+      <div class="section-title">💵 Первая выручка</div>
+      <div class="info-block">
+        <div class="info-label">Начало поступлений</div>
+        <div class="info-value">6-й месяц</div>
+        <div class="info-detail">Июнь 2026 года с даты начала инвестирования</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">⏱ Окупаемость проекта</div>
+      <div class="info-block">
+        <div class="info-label">Возврат инвестиций для доли 30%</div>
+        <div class="info-value">18 месяцев</div>
+        <div class="info-detail">Чистая прибыль за период: 221,9 млн ₽<br>30% от суммы = 66,6 млн ₽</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🚀 Доходность инвестора</div>
+      <div class="info-block">
+        <div class="info-label">За 60 месяцев (5 лет)</div>
+        <div class="big-number">1 202%</div>
+        <div class="info-detail">Чистая прибыль проекта: 2,59 млрд ₽<br>Прибыль инвестора (30%): 0,78 млрд ₽</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">💎 Прибыль инвестора (30%)</div>
+      <div class="info-block">
+        <div class="info-value highlight">780 млн ₽</div>
+        <div class="info-detail">Сумма к распределению в течение 60 месяцев с даты начала реализации проекта</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🌍 География бизнеса</div>
+      <div class="info-block">
+        <div class="info-label">Старт проекта</div>
+        <div class="info-value" style="font-size: 20px;">Екатеринбург</div>
+        <div class="info-detail">Текущая модель: 35 тыс. пользователей онлайн + 15 тыс. покупателей в магазине/месяц через 5 лет</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Масштабирование</div>
+        <div class="info-value" style="font-size: 18px;">10 городов-миллионников</div>
+        <div class="info-detail">Население каждого города свыше 1 млн человек</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🛍 Целевой рынок</div>
+      <div class="info-block">
+        <div class="market-tags">
+          <div class="tag">E-grocery</div>
+          <div class="tag">Розничная торговля</div>
+        </div>
+        <div class="info-detail" style="margin-top: 12px;">
+          <strong>E-grocery:</strong> Рынок онлайн-продаж продовольственных товаров (доставка продуктов)<br><br>
+          <strong>Розница:</strong> Физический склад/магазин с оптовыми ценами
+        </div>
+      </div>
+    </div>
+
     <footer>
       ДаДаДа ПРОДУКТЫ<br>
-      Клуб оптовых цен для всех
+      Инвестиционное предложение 2026
     </footer>
   </div>
 </body>
